@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Survey Form
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+   
+  <body>
+    <h1 id="title">
+      Survey Form
+    </h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform.
+    </p>
+    <form id="survey-form" action="">
+      <div class="name">
+        <label for="name" id="name-label">Name 
+          <input type="text" id="name" placeholder="Write Your Full Name" required/>
+        </label>
+      </div>
+      <div class="email">
+        <label for="email" id="email-label">Email 
+          <input type="email" id="email" placeholder="Enter Currently Active Email" required/>
+        </label>
+      </div>
+      <div class="age">
+        <label for="number" id="number-label">Age (<p class="inline short">optional</p>) 
+          <input type="number" id="number" min="13" placeholder="Enter Your Age" />
+        </label>
+      </div>
+      <div class="gender">
+        <label>Select Your Gender !
+          <select>
+            <option disabled selected value>Select Current Value</option>
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+            <option value="transgender">Transgender</option>
+            <option value="prefer-not">Prefer Not To Say</option>
+          </select>
+        </label>
+      </div>
+      <div class="satisfy">
+        <p class="review">Are you satisfied with our service ?</p>
+        <label for="yes" class="in-label">
+          <input type="radio" id="yes" name="review" checked/>
+          Yes
+        </label>
+        <label for="no" class="in-label">
+          <input type="radio" id="no" name="review"/>
+          No
+        </label>
+      </div>
+      <div class="check">
+        <p class="check">What would you like to see improved ?</p><p class="short"> (Check all that apply.)</p>
+        <label for="" class="in-label">
+          <input type="checkbox" id="on-ground" value="on-ground"/>
+          On Ground Services
+        </label>
+        <label for="" class="in-label">
+          <input type="checkbox" id="backend" value="backend"/>
+          Backend Services
+        </label>
+        <label for="" class="in-label">
+          <input type="checkbox" id="customer" value="customer"/>
+          Customer Support
+        </label>
+      </div>
+      <div class="sugg">
+        <label for="sugg">Any comments or suggestions?</label>
+        <textarea id="sugg" placeholder="Enter Your Suggestions Here" rows="6"></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>   
+  </body>
+</html>
